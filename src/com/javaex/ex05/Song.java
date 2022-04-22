@@ -1,52 +1,67 @@
 package com.javaex.ex05;
 
+import java.util.Objects;
+
 public class Song {
 
-	private String title;
+	//필드
 	private String artist;
+	private String title;
 	private String album;
-	private String composer;
 	private int year;
 	private int track;
+	private String composer;
 	
-	public void setTitle(String t) {
-		title = t;
+	//생성자
+	public Song() { //메모리에 올리는 일
+		System.out.println("Song()");
 	}
 	
+	public Song(String artist, String title, String album, int year, int track, String composer) {
+		//메모리에 올리는 일
+		this.artist = artist;
+		this.title = title;
+		this.album = album;	
+		this.year = year;
+		this.track = track;
+		this.composer = composer;
+	}
+	
+	//메소드-gs
 	public void setArtist(String a) {
-		artist = a;
+		this.artist = a;
+	}
+	
+	public void setTitle(String t) {
+		this.title = t;
 	}
 	
 	public void setAlbum(String ab) {
-		album = ab;
-	}
-	
-	public void setComposer(String c) {
-		composer = c;
+		this.album = ab;
 	}
 	
 	public void setYear(int y) {
-		year = y;
+		this.year = y;
 	}
 	
 	public void setTrack(int t) {
-		track = t;
+		this.track = t;
 	}
 	
-	public String getTitle() {
-		return title;
+	public void setComposer(String c) {
+		this.composer = c;
 	}
 	
 	public String getArtist() {
 		return artist;
 	}
 	
-	public String getAlbum() {
-		return album;
+	public String getTitle() {
+		return title;
 	}
 	
-	public String getComposer() {
-		return composer;
+	public String getAlbum() {
+		return album;
 	}
 	
 	public int getYear() {
@@ -57,8 +72,18 @@ public class Song {
 		return track;
 	}
 	
+	public String getComposer() {
+		return composer;
+	}
+	
+	//메소드-일반
+	@Override
+	public int hashCode() {
+		return Objects.hash(album, artist, composer, title, track, year);
+	}
+
 	public void showInfo() {
 		System.out.println(artist+", "+title+" ("+album+", "+year+", "+track+"번 track, "+composer+" 작곡)");
 	}
-	
+
 }
