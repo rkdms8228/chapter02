@@ -24,10 +24,13 @@ public class PointApp {
 		pointone.draw();
 		pointtwo.draw();
 		pointthree.draw();
+		
+		pointone.draw(true);
+		pointone.draw(false);
 
 		/*
-		System.out.println("점[X="+pointone.getWide()+", Y="+pointone.getHigh()+"]을 그렸습니다.");
-		System.out.println("점[X="+pointtwo.getWide()+", y="+pointtwo.getHigh()+"]을 그렸습니다.");
+		System.out.println("점[X="+pointone.getX()+", Y="+pointone.getY()+"]을 그렸습니다.");
+		System.out.println("점[X="+pointtwo.getX()+", y="+pointtwo.getY()+"]을 그렸습니다.");
 		*/
 		
 	}

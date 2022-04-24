@@ -39,8 +39,18 @@ public class Point {
 		return y;
 	}
 	
+	//메소드-일반
 	public void draw() {
 		System.out.println("점[X="+x+", Y="+y+"]을 그렸습니다.");
+	}
+	
+	public void draw(boolean action) {
+		if(action == true) {
+			System.out.println("점[X="+x+", Y="+y+"]을 그렸습니다.");
+		}else {
+			System.out.println("점[X="+x+", Y="+y+"]을 지웠습니다.");
+
+		}
 	}
 	
 }
