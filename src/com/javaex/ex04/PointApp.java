@@ -18,7 +18,7 @@ public class PointApp {
 		pointfour.setY(200);
 		
 		//y값을 먼저 넣고
-		//setter x값을 넣는다
+		//setter x값을 넣으려 할 때 오류
 		Point pointfive = new Point(20000); //y값
 
 		pointone.draw();
