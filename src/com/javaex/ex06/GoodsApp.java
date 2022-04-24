@@ -22,13 +22,13 @@ public class GoodsApp {
 		cup.setName("mugcup");
 		cup.setPrice(2000);
 		
-		System.out.println(notebook.toString());
-		System.out.println(camera.toString());
-		System.out.println(cup.toString());
+		//System.out.println(notebook.toString());
+		//System.out.println(camera.toString());
+		//System.out.println(cup.toString());
 		
-		//notebook.showInfo();
-		//camera.showInfo();
-		//cup.showInfo();
+		notebook.showInfo();
+		camera.showInfo();
+		cup.showInfo();
 
 	}
 
