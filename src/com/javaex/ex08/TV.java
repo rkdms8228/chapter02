@@ -62,6 +62,7 @@ public class TV {
 	}
 	
 	public void channel(boolean up) {
+		
 		if(up == true) {
 			channel = this.channel+1;
 		} else {
@@ -70,6 +71,7 @@ public class TV {
 	}
 	
 	public void volume(boolean up) {
+		
 		if(up == true) {
 			volume = this.volume+1;
 		} else {
@@ -78,10 +80,12 @@ public class TV {
 	}
 	
 	public void status() {
+		
 		System.out.print("채널: "+channel+"\t");
 		System.out.print("볼륨: "+volume+"\t");
 		System.out.println("전원: "+power);
 		System.out.println();
+		
 	}
 	
 }
