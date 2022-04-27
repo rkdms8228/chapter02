@@ -14,7 +14,7 @@ public class TV {
 	public TV(boolean power) {
 		this.power = power;
 	}
-	
+
 	public TV(int channel, int volume, boolean power) {
 		this.channel = channel;
 		this.volume = volume;
@@ -37,7 +37,7 @@ public class TV {
 	//메소드-일반
 	public void channel(int channel) {
 		
-		if(0<channel && channel<256) {
+		if(0<channel && channel<=255) {
 			
 		}else {
 			channel = 0;
