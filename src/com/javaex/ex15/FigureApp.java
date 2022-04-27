@@ -47,7 +47,7 @@ public class FigureApp {
 		
 		
 		
-		//원 생성
+		//삼각형 생성
 		Triangle t01 = new Triangle("빨강", "검정", 4, 4);
 		Triangle t02 = new Triangle("보라", "검정", 10, 10);
 				
