@@ -11,10 +11,10 @@ public class GoodsApp {
 		//System.out.println(camera.getCount());
 		System.out.println(camera.toString());
 		
-		Goods computer = new Goods("LG gram", 900000);
-		computer.setName("LG gram");
-		computer.setPrice(900000);
-		System.out.println(computer.toString());
+		Goods notebook = new Goods("LG gram", 900000);
+		notebook.setName("LG gram");
+		notebook.setPrice(900000);
+		System.out.println(notebook.toString());
 		
 		Goods cup = new Goods("mugcup", 2000);
 		System.out.println(cup.toString());
