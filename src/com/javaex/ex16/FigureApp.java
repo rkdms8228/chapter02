@@ -65,6 +65,16 @@ public class FigureApp {
 		//**강제 형변환(타입 변환)으로 가로값 출력(다운캐스팅)
 		System.out.println(((Ractangle)fArray[0]).getWidth());
 		//괄호로 시선을 바꾸는 작업 먼저 해 주기 중요**
+		
+		//선색을 모두 보라로 변경하여 확인
+		for(int i = 0; i<fArray.length; i++) {
+			fArray[i].setLineColor("보라");
+		}
+		
+		for(int i = 0; i<fArray.length; i++) {
+			fArray[i].draw();
+			System.out.println();
+		}
 
 	}
 
