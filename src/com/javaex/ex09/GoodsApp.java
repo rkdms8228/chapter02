@@ -6,13 +6,13 @@ public class GoodsApp {
 
 		Goods camera = new Goods("nikon", 400000);
 		
-		Goods computer = new Goods("LG gram", 900000);
+		Goods notebook = new Goods("LG gram", 900000);
 		
 		Goods cup = new Goods("mugcup", 2000);
 		
 		Goods[] goodsArray = new Goods[3];
 		goodsArray[0] = camera;
-		goodsArray[1] = computer;
+		goodsArray[1] = notebook;
 		goodsArray[2] = cup;
 		
 		for(int i = 0; i<goodsArray.length; i++) {
