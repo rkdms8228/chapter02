@@ -45,7 +45,7 @@ public class Triangle extends Figure{
 	}
 	
 	public double area() {
-		double area = width*height;
+		double area = (width*height)/2;
 		return area;
 	}
 
