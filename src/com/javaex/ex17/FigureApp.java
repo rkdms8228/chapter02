@@ -8,7 +8,7 @@ public class FigureApp {
 		//Figure f = new Figure();
 		
 		//추상클래스 Figure에는 들어가지 않지만 자식클래스에는 들어감
-		Ractangle r = new Ractangle("빨강", "검정", 100, 100);
+		Rectangle r = new Rectangle("빨강", "검정", 100, 100);
 		
 		
 		//배열
@@ -16,8 +16,8 @@ public class FigureApp {
 		
 		
 		//사각형 생성
-		Figure fr01 = new Ractangle("빨강", "검정", 4, 4);
-		Figure fr02 = new Ractangle("주황", "검정", 5, 5);
+		Figure fr01 = new Rectangle("빨강", "검정", 4, 4);
+		Figure fr02 = new Rectangle("주황", "검정", 5, 5);
 		
 		
 		//원 생성

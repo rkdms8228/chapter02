@@ -15,16 +15,16 @@ public class FigureApp {
 		dp01.draw(); //오버라이드라고 하지 않음 | 원래 인터페이스의 성질(원리 같음)
 		//dp01.getX(); *없음*
 		
-		Ractangle r01 = new Ractangle("빨강", "검정", 1, 1);
+		Rectangle r01 = new Rectangle("빨강", "검정", 1, 1);
 		r01.draw();
 		r01.area();
 		
 		
-		Figure fr01 = new Ractangle("빨강", "검정", 5, 5);
+		Figure fr01 = new Rectangle("빨강", "검정", 5, 5);
 		//fr01.draw(); X 쓸 수 없음 | 보이지 않음
 		fr01.area();
 		
-		Drawable d01 = new Ractangle("빨강", "검정", 5, 5);
+		Drawable d01 = new Rectangle("빨강", "검정", 5, 5);
 		d01.draw();
 		//d01.area(); X 쓸 수 없음 | 보이지 않음
 		*/
@@ -37,7 +37,7 @@ public class FigureApp {
 		
 		
 		//사각형 선언
-		Drawable r01 = new Ractangle("빨강", "검정", 1, 1);
+		Drawable r01 = new Rectangle("빨강", "검정", 1, 1);
 		//원 선언
 		Drawable c01 = new Circle("파랑", "검정", 3);
 		//삼각형 선언
@@ -60,10 +60,10 @@ public class FigureApp {
 		
 		
 		//사각형의 가로값
-		System.out.println(((Ractangle)dArray[0]).getWidth());
+		System.out.println(((Rectangle)dArray[0]).getWidth());
 		
 		//사각형의 면의 색
-		System.out.println(((Ractangle)dArray[0]).getFillColor());
+		System.out.println(((Rectangle)dArray[0]).getFillColor());
 		
 		System.out.println("===================================");
 		//////////////////////////////////////////////////////

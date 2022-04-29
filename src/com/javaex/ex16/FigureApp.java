@@ -8,12 +8,12 @@ public class FigureApp {
 		Figure f = new Figure("빨강", "노랑");
 
 		//사각형 생성
-		Ractangle r = new Ractangle("빨강", "검정", 4, 4);
+		Rectangle r = new Rectangle("빨강", "검정", 4, 4);
 		System.out.println(r.getWidth()); //자식 메소드 사용 가능
 		
 		//**메모리에는 다 올라가지만 부모 쪽만 보임(섞어쓰기)**
 		//보이지 않더라도 때에 따라서 꺼내 쓸 수 있음! 절대 Figure 단독과 같지 않음
-		Figure fr = new Ractangle("빨강", "검정", 4, 4);
+		Figure fr = new Rectangle("빨강", "검정", 4, 4);
 
 		
 		
@@ -26,8 +26,8 @@ public class FigureApp {
 		
 		
 		//사각형 생성
-		Figure fr01 = new Ractangle("빨강", "검정", 4, 4);
-		Figure fr02 = new Ractangle("주황", "검정", 5, 5);
+		Figure fr01 = new Rectangle("빨강", "검정", 4, 4);
+		Figure fr02 = new Rectangle("주황", "검정", 5, 5);
 		
 		
 		//원 생성
@@ -63,7 +63,7 @@ public class FigureApp {
 		
 		///////////////////////////////////////////////////////
 		//**강제 형변환(타입 변환)으로 가로값 출력(다운캐스팅)
-		System.out.println(((Ractangle)fArray[0]).getWidth());
+		System.out.println(((Rectangle)fArray[0]).getWidth());
 		//괄호로 시선을 바꾸는 작업 먼저 해 주기 중요**
 		
 		//선색을 모두 보라로 변경하여 확인

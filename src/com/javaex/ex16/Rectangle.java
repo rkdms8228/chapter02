@@ -1,16 +1,16 @@
 package com.javaex.ex16;
 
-public class Ractangle extends Figure{
+public class Rectangle extends Figure{
 	
 	//필드
 	private int width;
 	private int height;
 	
 	//생성자
-	public Ractangle() {
+	public Rectangle() {
 	}
 	
-	public Ractangle(String fillColor, String lineColor, int width, int height) {
+	public Rectangle(String fillColor, String lineColor, int width, int height) {
 		//super(fillColor, lineColor); 디폴트 생성자
 		super.fillColor = fillColor;
 		super.lineColor = lineColor;
@@ -38,7 +38,7 @@ public class Ractangle extends Figure{
 	//메소드-일반
 	@Override
 	public String toString() {
-		return "Ractangle [getFillColor()=" + super.fillColor + ", getLineColor()=" + this.lineColor + ", width=" + width
+		return "Rectangle [getFillColor()=" + super.fillColor + ", getLineColor()=" + this.lineColor + ", width=" + width
 				+ ", height=" + height + "]";
 	}
 	

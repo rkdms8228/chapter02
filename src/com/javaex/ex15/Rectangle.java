@@ -1,16 +1,16 @@
-package com.javaex.ex17;
+package com.javaex.ex15;
 
-public class Ractangle extends Figure{
+public class Rectangle extends Figure{
 	
 	//필드
 	private int width;
 	private int height;
 	
 	//생성자
-	public Ractangle() {
+	public Rectangle() {
 	}
 	
-	public Ractangle(String fillColor, String lineColor, int width, int height) {
+	public Rectangle(String fillColor, String lineColor, int width, int height) {
 		//super(fillColor, lineColor); 디폴트 생성자
 		super.fillColor = fillColor;
 		super.lineColor = lineColor;
@@ -38,17 +38,12 @@ public class Ractangle extends Figure{
 	//메소드-일반
 	@Override
 	public String toString() {
-		return "Ractangle [getFillColor()=" + super.fillColor + ", getLineColor()=" + this.lineColor + ", width=" + width
+		return "Rectangle [getFillColor()=" + super.fillColor + ", getLineColor()=" + this.getLineColor() + ", width=" + width
 				+ ", height=" + height + "]";
 	}
 	
 	public void draw() {
 		System.out.println("면색: "+super.fillColor+" | 선색: "+this.lineColor+" | 가로: "+width+" | 세로: "+height+"의 사각형을 그렸습니다.");
-	}
-	
-	public double area() {
-		double area = width*height;
-		return area;
 	}
 
 }
